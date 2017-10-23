@@ -8,7 +8,7 @@
 </c:if>
 
 <table align='center' border='1' cellspacing='0'>
-	<tr>
+	<tr align='center'>
 		<td>id</td>
 		<td>名称</td>
 		<td>价格</td>
@@ -20,9 +20,7 @@
 			<td>${product.name}</td>
 			<td>${product.price}</td>
 			<td>
-
 				<form action="addOrderItem" method="post">
-
 					数量<input type="text" value="1" name="num"> <input
 						type="hidden" name="pid" value="${product.id}"> <input
 						type="submit" value="购买">

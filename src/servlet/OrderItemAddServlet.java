@@ -44,7 +44,6 @@ public class OrderItemAddServlet extends HttpServlet {
 
 		if (!found)
 			ois.add(oi);
-
 		response.sendRedirect("/cart/listOrderItem");
 
 	}

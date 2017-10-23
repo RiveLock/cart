@@ -36,8 +36,8 @@ public class UserDAO {
             if (rs.next()){
                 result = new User();
                 result.setId(rs.getInt(1));
-                result.setPassword(password);
                 result.setName(name);
+                result.setPassword(password);
             }
  
             ps.close();
