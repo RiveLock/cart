@@ -29,6 +29,16 @@
         <url-pattern>/addOrderItem</url-pattern>
     </servlet-mapping>
      
+      <servlet>
+        <servlet-name>OrderItemDeleteServlet</servlet-name>
+        <servlet-class>servlet.OrderItemDeleteServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>OrderItemDeleteServlet</servlet-name>
+        <url-pattern>/deleteOrderItem</url-pattern>
+    </servlet-mapping>
+     
     <servlet>
         <servlet-name>OrderItemListServlet</servlet-name>
         <servlet-class>servlet.OrderItemListServlet</servlet-class>

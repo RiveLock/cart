@@ -10,6 +10,7 @@
         <td>单价</td>
         <td>数量</td>
         <td>小计</td>
+        <td>delete</td>
     </tr>
  
     <c:forEach items="${ois}" var="oi" varStatus="st">
@@ -18,6 +19,7 @@
             <td>${oi.product.price}</td>
             <td>${oi.num}</td>
             <td>${oi.product.price*oi.num}</td>
+            <td><a href='deleteOrderItem?id=${oi.product.id}'>delete</a></td>
         </tr>
     </c:forEach>
      
